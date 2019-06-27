@@ -76,7 +76,51 @@ font-family: 'Press Start 2P', cursive;
 	transition: all 0.5s ease; 
 	z-index: 9999;
 }
+.zomb {
+	position: absolute;
+	bottom:45px;
+	left: 150px;
+	transition: all 0.5s ease; 
+	z-index: 9999;
+}
+.zomb img {
+	width: 150px;
+	height: 250px;
+}
+.obloko {
+	position: absolute;
+	top:20px;
+	right: 150px;
+	transition: all 0.5s ease; 
+	z-index: 9999;
+	-webkit-animation-name: obanim;
+  animation-name: obanim;
+  -webkit-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
+  animation-iteration-count:infinite;
+-moz-animation-iteration-count:infinite;
+-webkit-animation-iteration-count:infinite;
+}
+.obloko img {
+	width: 250px;
+	height: 250px;
+}
 
+@keyframes obanim {
+	from {
+		top:20px;
+	      right: 150px;
+        
+		}50%{
+          top:45px;
+         right: 177px;
+		}
+		to{
+          top:20px;
+	      right: 150px;
+		}
+}
 
 @keyframes pulse {
   from {

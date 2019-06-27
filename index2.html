@@ -9,12 +9,35 @@
 	<div class="ranner"> 
 		
 	</div> 
+	<div class="obloko" id="ob">
+		<img src="DEH.gif" alt=""> 
+	</div>
+	<div class="zomb" id="z">
+		<img src="zomb.gif" alt=""> 
+	</div> 
 	<div class="sobaka" id="sob">
 		<img src="sobaka.gif" alt=""> 
 	</div> 
 	<div class="carbox" id="box">
 		<img src="r.gif" alt="">
 	</div>
-	<script src="main2.js"></script>   
+	<script src="main2.js"></script> 
+	 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+    	function  jump() {
+	
+	sobaka.style.bottom = 250+'px';
+	setTimeout(function() { 
+     sobaka.style.bottom = -28+'px';
+	}, 700);
+} 
+      $(document).ready(function() {
+        $(document).keydown(function(e) {
+          if (e.keyCode == '32') {
+            jump();
+          }
+        });
+      });
+    </script>  
 </body> 
 </html> 
